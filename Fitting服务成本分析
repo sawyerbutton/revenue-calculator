@@ -1,0 +1,86 @@
+为了对自行车 fitting 和运动康复服务的成本进行分析，首先需要明确这些服务所需的关键设备和工具。通过对固定资产和运营成本的分解，我们可以构建一个详细的成本模型，并标注其中的关键变量，帮助你灵活调整和优化业务策略。
+
+### 1. **固定资产与设备成本**
+在自行车 fitting 和运动康复服务中，以下设备是关键的固定资产：
+1. **fitting 设备 (`C_fitting_equipment`)**：
+   - 动感测量仪单价 (`P_dynamic_measurement`)：假设为 30,000 元。
+   - 姿势校正仪器单价 (`P_posture_correction`)：假设为 20,000 元。
+   - 设备数量 (`N_fitting_equipment`)：每种设备各 1 台。
+   - 计算公式：
+     \[
+     C_{fitting\_equipment} = (P_{dynamic\_measurement} + P_{posture\_correction}) \times N_{fitting\_equipment}
+     \]
+
+2. **运动康复设备 (`C_rehabilitation_equipment`)**：
+   - 拉伸带、按摩枪、泡沫轴、理疗床等综合设备的总价 (`P_rehabilitation_equipment`)：假设为 15,000 元。
+   - 设备数量 (`N_rehabilitation_equipment`)：假设为 1 套。
+   - 计算公式：
+     \[
+     C_{rehabilitation\_equipment} = P_{rehabilitation\_equipment} \times N_{rehabilitation\_equipment}
+     \]
+
+3. **空间装修与隔断成本 (`C_space_renovation`)**：
+   - 装修与隔断总造价 (`P_space_renovation`)：假设为 20,000 元。
+   - 计算公式：
+     \[
+     C_{space\_renovation} = P_{space\_renovation}
+     \]
+
+### 2. **运营成本**
+除了设备成本，还需要考虑日常运营中的其他成本，如设备维护、耗材成本和水电费用：
+1. **设备维护费用 (`C_maintenance`)**：
+   - 每年的设备维护费用 (`P_maintenance_per_year`)：假设为 2,400 元，月分摊为 200 元。
+   - 计算公式：
+     \[
+     C_{maintenance} = \frac{P_{maintenance\_per\_year}}{12}
+     \]
+
+2. **每月水电费用 (`C_utilities`)**：假设为 1,000 元。
+
+### 3. **总成本模型**
+综合以上因素，月度总成本可以表示为：
+\[
+C_{total\_monthly} = C_{fitting\_equipment} + C_{rehabilitation\_equipment} + C_{space\_renovation} + C_{maintenance} + C_{utilities}
+\]
+
+其中：
+- \( C_{fitting\_equipment} = (P_{dynamic\_measurement} + P_{posture\_correction}) \times N_{fitting\_equipment} \)
+- \( C_{rehabilitation\_equipment} = P_{rehabilitation\_equipment} \times N_{rehabilitation\_equipment} \)
+- \( C_{space\_renovation} = P_{space\_renovation} \)
+- \( C_{maintenance} = \frac{P_{maintenance\_per\_year}}{12} \)
+- \( C_{utilities} = 1,000 元 \)
+
+### 4. **变量标注**
+在这个成本模型中，以下变量是关键的可调参数：
+1. **动感测量仪单价 (`P_dynamic_measurement`)** 和数量 (`N_fitting_equipment`)。
+2. **姿势校正仪器单价 (`P_posture_correction`)**。
+3. **运动康复设备的总价 (`P_rehabilitation_equipment`)** 和数量 (`N_rehabilitation_equipment`)。
+4. **空间装修与隔断总造价 (`P_space_renovation`)**。
+5. **每年的设备维护费用 (`P_maintenance_per_year`)**。
+6. **每月的水电费用 (`C_utilities`)**。
+
+### 5. **具体成本数据举例（假设值）**
+假设如下数据进行初步估算：
+- 动感测量仪单价：30,000 元，数量 1 台。
+- 姿势校正仪器单价：20,000 元，数量 1 台。
+- 运动康复设备总价：15,000 元，数量 1 套。
+- 空间装修与隔断总造价：20,000 元。
+- 每年的设备维护费用：2,400 元，月分摊为 200 元。
+- 每月水电费用：1,000 元。
+
+代入公式计算：
+- `C_fitting_equipment = (30,000 + 20,000) × 1 = 50,000 元`
+- `C_rehabilitation_equipment = 15,000 × 1 = 15,000 元`
+- `C_space_renovation = 20,000 元`
+- `C_maintenance = 200 元`
+- `C_utilities = 1,000 元`
+
+月度总成本：
+\[
+C_{total\_monthly} = 50,000 + 15,000 + 20,000 + 200 + 1,000 = 86,200 元
+\]
+
+### 6. **成本模型的应用与扩展**
+你可以通过调节上述变量（如设备选择、数量、装修费用等），灵活地进行成本分析，了解不同配置下的成本变化，并优化你的运营策略。
+
+这个成本模型为你提供了一个系统化的框架，帮助你清晰了解自行车 fitting 和运动康复服务的各项成本构成，并在实际运营中灵活调整这些变量，以实现更高的经济效益。
